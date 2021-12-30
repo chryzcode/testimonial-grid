@@ -1,0 +1,92 @@
+body {
+  background: hsl(0, 9%, 83%);
+}
+
+.container {
+  width: 80%;
+  height: 90vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: [col-start] 1fr [col-2] 1fr [col-3] 1fr [col-4] 1fr [col-end];
+  grid-column-gap: 1.5em;
+  grid-row-gap: 1.5em;
+  grid-template-areas:
+    "grid-1 grid-1 grid-2 grid-5"
+    "grid-3 grid-4 grid-4 grid-5";
+  grid-auto-flow: row;
+}
+
+.container > div {
+  border-radius: 1em;
+  padding: 20px;
+}
+
+div.body {
+  font-size: 13px;
+}
+
+.grid-1 {
+  background-color: hsl(263, 55%, 52%);
+  grid-area: grid-1;
+  color: hsl(0, 0%, 100%);
+}
+
+.grid-2 {
+  background-color: hsl(217, 19%, 35%);
+  grid-area: grid-2;
+  color: hsl(0, 0%, 100%);
+}
+
+.grid-3 {
+  grid-area: grid-3;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.grid-4 {
+  background-color: hsl(219, 29%, 14%);
+  grid-area: grid-4;
+  color: hsl(0, 0%, 100%);
+}
+
+.grid-5 {
+  grid-area: grid-5;
+  background-color: hsl(0, 0%, 100%);
+}
+
+div.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+img {
+  border-radius: 100%;
+  width: 40px;
+  display: inline-block;
+  padding: 5px rgb(89, 0, 255);
+  padding-top: 5px;
+}
+
+.user-container {
+  display: inline-block;
+  padding-left: 6px;
+}
+
+.post {
+  opacity: 50%;
+  font-size: 12px;
+}
+
+.body {
+  margin-top: 15px;
+  opacity: 70%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
